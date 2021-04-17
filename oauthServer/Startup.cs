@@ -25,7 +25,7 @@ namespace oauthServer
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionString = Configuration["ConnectionStrings:SQLServer"];
+            string connectionString = Configuration["ConnectionStrings:RemoteSQLServer"];
             string password = Configuration["Jwt:Secret"];
             string certificate = Configuration["Jwt:Certificate"];
 
